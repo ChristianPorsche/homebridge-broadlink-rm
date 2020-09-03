@@ -191,13 +191,12 @@
           "autoSwitch": "A/C Auto Switch",
           "data":{
             "off":"2600500000012...",
-            "heat30":{
+            "temperature30":{
+              "pseudo-mode":"heat",
               "data":"2600500000012..."
             },
-            "auto22":{
-              "data":"2600500000012..."
-            },
-            "cool16":{
+            "temperature16":{
+              "pseudo-mode":"cool",
               "data":"2600500000012..."
             }
           }
@@ -205,6 +204,54 @@
         {
           "name":"A/C Auto Switch",
           "type":"switch"
+        },
+        {
+          "name":"Air Purifier",
+          "type":"air-purifier",
+          "showLockPhysicalControls": true,
+          "data":{
+            "on":"2600500000012...",
+            "off":"2600500000012...",
+            "targetStateManual": "2600500000012...",
+            "targetStateAuto": "2600500000012...",
+            "lockControls": "2600500000012...",
+            "unlockControls": "2600500000012...",
+            "swingToggle": "2600500000012...",
+            "fanSpeed10": "2600500000012...",
+            "fanSpeed20": "2600500000012...",
+            "fanSpeed30": "2600500000012...",
+            "fanSpeed40": "2600500000012...",
+            "fanSpeed50": "2600500000012...",
+            "fanSpeed60": "2600500000012...",
+            "fanSpeed70": "2600500000012...",
+            "fanSpeed80": "2600500000012...",
+            "fanSpeed90": "2600500000012...",
+            "fanSpeed100": "2600500000012..."
+          }
+        },
+        {
+          "name":"Humidifier Dehumidifier",
+          "type":"humidifier-dehumidifier",
+          "showLockPhysicalControls": true,
+          "data":{
+            "on":"2600500000012...",
+            "off":"2600500000012...",
+            "targetStateHumidifier": "2600500000012...",
+            "targetStateDehumidifier": "2600500000012...",
+            "lockControls": "2600500000012...",
+            "unlockControls": "2600500000012...",
+            "swingToggle": "2600500000012...",
+            "fanSpeed10": "2600500000012...",
+            "fanSpeed20": "2600500000012...",
+            "fanSpeed30": "2600500000012...",
+            "fanSpeed40": "2600500000012...",
+            "fanSpeed50": "2600500000012...",
+            "fanSpeed60": "2600500000012...",
+            "fanSpeed70": "2600500000012...",
+            "fanSpeed80": "2600500000012...",
+            "fanSpeed90": "2600500000012...",
+            "fanSpeed100": "2600500000012..."
+          }
         },
         {
           "name": "Fan",
@@ -266,39 +313,6 @@
               }
             ],
             "stop":"STOP_HEX..."
-          }
-        },
-        {
-          "name":"TV",
-          "type":"tv",
-          "data": {
-            "off": "HEX...",
-            "on": "HEX...",
-            "remote": {
-              "select": "HEX...",
-              "arrowUp": "HEX...",
-              "arrowDown": "HEX...",
-              "arrowLeft": "HEX...",
-              "arrowRight": "HEX...",
-              "back": "HEX...",
-              "exit": "HEX...",
-              "playPause": "HEX...",
-              "info": "HEX..."
-            },
-            "powerMode": {
-              "show": "HEX..."
-            },
-            "volume": {
-              "up": "HEX...",
-              "down": "HEX..."
-            },
-            "inputs": [
-              {
-                "name": "INPUT 1",
-                "type": "hdmi",
-                "data": "HEX..."
-              }
-            ]
           }
         }
       ]
